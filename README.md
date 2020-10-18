@@ -3,7 +3,8 @@
 It is Web Portal Bisnis UP.
 
 ## How to install
-1. use command : git clone https://github.com/raisrindo/portal-bisnis-up.git
+1. open CLI
+2. use command : git clone https://github.com/raisrindo/portal-bisnis-up.git
 
 ## How to add changes/new feature 
 1. open folder "portal-bisnis-up"
