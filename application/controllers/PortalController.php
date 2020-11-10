@@ -21,7 +21,7 @@ class PortalController extends CI_Controller
      */
     public function index()
     {
-        $login = true;
+        $login = false;
         if ($login) {
             $this->load->view('usaha/navbar_usaha');
         } else {
@@ -31,7 +31,7 @@ class PortalController extends CI_Controller
     }
     public function masuk()
     {
-        $login = true;
+        $login = false;
         if ($login) {
             redirect(base_url());
         }
@@ -41,7 +41,7 @@ class PortalController extends CI_Controller
     }
     public function daftar()
     {
-        $login = true;
+        $login = false;
         if ($login) {
             redirect(base_url());
         }
