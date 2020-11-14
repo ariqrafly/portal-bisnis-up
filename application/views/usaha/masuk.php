@@ -1,14 +1,17 @@
 <div class="row" style="font-family: Poppins, sans-serif;padding: 58px;padding-top: 0px;padding-bottom: 0px;padding-right: 58px;height: 408px;">
     <div class="col-12">
-        <form>
+        <form method="post" action="<?= base_url('') ?>">
             <div class="form-row">
                 <div class="col d-flex d-lg-flex justify-content-center justify-content-lg-center" style="padding: 0px;margin-bottom: 20px;"><span class="text-center" style="font-size: 20px;color: #ff4141;font-weight: bold;font-family: Poppins, sans-serif;font-style: normal;">Masuk</span></div>
             </div>
+
+            <?= $this->session->flashdata('message'); ?>
+
             <div class="form-row d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="margin-bottom: 20px;">
-                <div class="col-12 col-lg-6 d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="padding: 0px;"><input class="border rounded form-control" type="email" placeholder="Email" style="padding: 7px;"></div>
+                <div class="col-12 col-lg-6 d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="padding: 0px;"><input class="border rounded form-control" type="email" name= "email" placeholder="Email" style="padding: 7px;"></div>
             </div>
             <div class="form-row d-flex justify-content-center align-items-center" style="margin-bottom: 20px;">
-                <div class="col-12 col-lg-6 d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="padding: 0px;"><input class="border rounded form-control" type="email" placeholder="Kata Sandi" style="padding: 7px;"></div>
+                <div class="col-12 col-lg-6 d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="padding: 0px;"><input class="border rounded form-control" type="password" name="password" placeholder="Kata Sandi" style="padding: 7px;"></div>
             </div>
             <div class="form-row" style="margin-bottom: 20px;">
                 <div class="col d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="padding: 0px;">
