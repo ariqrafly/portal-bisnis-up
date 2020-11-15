@@ -4,6 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class PortalController extends CI_Controller
 {
 
+  
     /**
      * Index Page for this controller.
      *
@@ -19,6 +20,12 @@ class PortalController extends CI_Controller
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
+
+    public function __construct(){
+        parent::__construct();
+        $this->load->library('form_validation');
+    }
+
     public function index()
     {
         $login = false;
@@ -29,26 +36,8 @@ class PortalController extends CI_Controller
         }
         $this->load->view('customer/index');
     }
-    public function masuk()
-    {
-        $login = false;
-        if ($login) {
-            redirect(base_url());
-        }
+   
 
-        $this->load->view('customer/navbar_customer');
-        $this->load->view('usaha/masuk');
-    }
-    public function daftar()
-    {
-        $login = false;
-        if ($login) {
-            redirect(base_url());
-        }
-
-        $this->load->view('customer/navbar_customer');
-        $this->load->view('usaha/daftar');
-    }
     public function cari()
     {
         $login = true;

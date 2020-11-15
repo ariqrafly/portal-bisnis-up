@@ -1,4 +1,6 @@
+
  <?php
+
 
 class User extends CI_Model
 {
@@ -13,6 +15,7 @@ class User extends CI_Model
 
     public function login($email, $password)
     {
+
         $this->db->where('email',$email);
         $this->db->where('password',$password);
         $dataUser = $this->db->get('user')->row_array();
@@ -20,4 +23,6 @@ class User extends CI_Model
         return $dataUser;
 
     }
+
 }
+
