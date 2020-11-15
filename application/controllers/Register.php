@@ -23,7 +23,6 @@ class Register extends CI_Controller {
         $this->upload->do_upload('image');
         $info = $this->upload->data();
         $image_path = base_url("assets/UserKTM/".$info['raw_name'].$info['file_ext']);
-  
 
         $name = $this->input->post('name');
         $password = $this->input->post('psw');
