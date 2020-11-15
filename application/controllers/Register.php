@@ -14,20 +14,29 @@ class Register extends CI_Controller {
     }
         
 	public function registerUser()
-	{
+	{   
+        $config = [
+            'upload_path' => './assets/UserKTM/',
+            'allowed_types' => 'jpg|png|jpeg'
+        ];
+        $this->load->library('upload',$config);
+        $this->upload->do_upload('image');
+        $info = $this->upload->data();
+        $image_path = base_url("assets/UserKTM/".$info['raw_name'].$info['file_ext']);
+  
+
         $name = $this->input->post('name');
         $password = $this->input->post('psw');
         $email = $this->input->post('email');
         $telp = $this->input->post('telp');
-        //$ktm = $this->input->post('ktm');
+    
 
         $newUser = array(
             'nama' => $name,
             'email' => $email,
             'password' => $password,
             'telephone' => $telp,
-            //'upload_ktm' => $ktm
-            'role_id' => 2
+            'upload_ktm' => $image_path
         );
 
         $this->accountExist($email, $password, $name, $newUser);
