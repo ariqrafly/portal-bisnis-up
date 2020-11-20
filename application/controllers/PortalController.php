@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class PortalController extends CI_Controller
 {
 
-  
+
     /**
      * Index Page for this controller.
      *
@@ -21,7 +21,8 @@ class PortalController extends CI_Controller
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
 
-    public function __construct(){
+    public function __construct()
+    {
         parent::__construct();
         $this->load->library('form_validation');
     }
@@ -36,7 +37,7 @@ class PortalController extends CI_Controller
         }
         $this->load->view('customer/index');
     }
-   
+
 
     public function cari()
     {
@@ -61,7 +62,81 @@ class PortalController extends CI_Controller
         $login = true;
         if ($login) {
             $this->load->view('usaha/navbar_usaha');
+            $this->load->view('usaha/dasbor_header');
+
             $this->load->view('usaha/dasbor');
+        }
+    }
+    public function usaha()
+    {
+        $login = true;
+        if ($login) {
+            $this->load->view('usaha/navbar_usaha');
+        } else {
+            $this->load->view('customer/navbar_customer');
+        }
+        $this->load->view('customer/detail_usaha');
+    }
+    public function edit_usaha()
+    {
+        $login = true;
+        if ($login) {
+            $this->load->view('usaha/navbar_usaha');
+        } else {
+            $this->load->view('customer/navbar_customer');
+        }
+        $this->load->view('usaha/detail_usaha');
+    }
+    public function lapor()
+    {
+        $login = true;
+        if ($login) {
+            $this->load->view('usaha/navbar_usaha');
+        } else {
+            $this->load->view('customer/navbar_customer');
+        }
+        $this->load->view('customer/lapor');
+    }
+    public function verifikasi_usaha()
+    {
+        $login = true;
+        if ($login) {
+            $this->load->view('usaha/navbar_usaha');
+        } else {
+            $this->load->view('customer/navbar_customer');
+        }
+        $this->load->view('usaha/dasbor_header');
+
+        $this->load->view('usaha/verifikasi_usaha');
+    }
+
+    public function laporan_usaha()
+    {
+        $login = true;
+        if ($login) {
+            $this->load->view('usaha/navbar_usaha');
+        } else {
+            $this->load->view('customer/navbar_customer');
+        }
+        $this->load->view('usaha/dasbor_header');
+        $this->load->view('usaha/cek_laporan');
+    }
+    public function hubungi_kami()
+    {
+        $login = true;
+        if ($login) {
+            $this->load->view('usaha/navbar_usaha');
+        } else {
+            $this->load->view('customer/navbar_customer');
+        }
+        $this->load->view('customer/hubungi_kami');
+    }
+    public function ganti_password()
+    {
+        $login = true;
+        if ($login) {
+            $this->load->view('usaha/navbar_usaha');
+            $this->load->view('usaha/ganti_password');
         }
     }
 }

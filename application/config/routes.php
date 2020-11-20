@@ -54,8 +54,23 @@ $route['masuk'] = 'PortalController/masuk';
 $route['cari'] = 'PortalController/cari';
 $route['daftar'] = 'PortalController/daftar';
 $route['profil'] = 'PortalController/profil';
-$route['usaha'] = '';
+$route['usaha'] = 'PortalController/usaha';
+$route['edit_usaha'] = 'PortalController/edit_usaha';
+$route['lapor'] = 'PortalController/lapor';
+$route['verifikasi_usaha'] = 'PortalController/verifikasi_usaha';
+$route['cek_laporan'] = 'PortalController/laporan_usaha';
+$route['hubungi'] = 'PortalController/hubungi_kami';
+
+$route['usaha_backoffice'] = 'BackOfficeController/usaha';
+$route['kelola_laporan'] = 'BackOfficeController/kelolaLaporan';
 $route['dasbor'] = 'PortalController/dasbor';
+$route['ganti_password'] = 'PortalController/ganti_password';
+
+
+$route['backOffice'] = 'BackOfficeController';
+$route['kelola_user'] = 'BackOfficeController/kelolaUser';
+$route['kelola_usaha'] = 'BackOfficeController/kelolaUsaha';
+$route['user'] = 'BackOfficeController/user';
 $route['edit'] = '';
 $route['password'] = '';
 $route['translate_uri_dashes'] = FALSE;
