@@ -49,44 +49,8 @@ class PortalController extends CI_Controller
         }
         $this->load->view('customer/cari');
     }
-    public function profil()
-    {
-        $login = true;
-        if ($login) {
-            $this->load->view('usaha/navbar_usaha');
-            $this->load->view('usaha/profil');
-        }
-    }
-    public function dasbor()
-    {
-        $login = true;
-        if ($login) {
-            $this->load->view('usaha/navbar_usaha');
-            $this->load->view('usaha/dasbor_header');
-
-            $this->load->view('usaha/dasbor');
-        }
-    }
-    public function usaha()
-    {
-        $login = true;
-        if ($login) {
-            $this->load->view('usaha/navbar_usaha');
-        } else {
-            $this->load->view('customer/navbar_customer');
-        }
-        $this->load->view('customer/detail_usaha');
-    }
-    public function edit_usaha()
-    {
-        $login = true;
-        if ($login) {
-            $this->load->view('usaha/navbar_usaha');
-        } else {
-            $this->load->view('customer/navbar_customer');
-        }
-        $this->load->view('usaha/detail_usaha');
-    }
+    
+    
     public function lapor()
     {
         $login = true;
@@ -97,46 +61,18 @@ class PortalController extends CI_Controller
         }
         $this->load->view('customer/lapor');
     }
-    public function verifikasi_usaha()
-    {
-        $login = true;
-        if ($login) {
-            $this->load->view('usaha/navbar_usaha');
-        } else {
-            $this->load->view('customer/navbar_customer');
-        }
-        $this->load->view('usaha/dasbor_header');
+    
 
-        $this->load->view('usaha/verifikasi_usaha');
-    }
-
-    public function laporan_usaha()
-    {
-        $login = true;
-        if ($login) {
-            $this->load->view('usaha/navbar_usaha');
-        } else {
-            $this->load->view('customer/navbar_customer');
-        }
-        $this->load->view('usaha/dasbor_header');
-        $this->load->view('usaha/cek_laporan');
-    }
     public function hubungi_kami()
     {
-        $login = true;
-        if ($login) {
-            $this->load->view('usaha/navbar_usaha');
-        } else {
+        if($_SESSION['login'] != true)
+        {
             $this->load->view('customer/navbar_customer');
+        }
+        else{
+            $this->load->view('customer/navbar_usaha');
         }
         $this->load->view('customer/hubungi_kami');
     }
-    public function ganti_password()
-    {
-        $login = true;
-        if ($login) {
-            $this->load->view('usaha/navbar_usaha');
-            $this->load->view('usaha/ganti_password');
-        }
-    }
+    
 }

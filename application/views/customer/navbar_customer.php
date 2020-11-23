@@ -20,9 +20,9 @@
             <div class="collapse navbar-collapse" id="navcol-1" style="background-color: #ffffff;">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url() ?>" style="color: #ed1c24;font-weight: bold;">Halaman Utama</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('masuk') ?>" style="color: #ed1c24;font-weight: bold;">Masuk</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('daftar') ?>" style="color: #ed1c24;font-weight: bold;">Daftarkan Usahamu</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('masuk') ?>" style="color: #ed1c24;font-weight: bold;">Hubungi Kami</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('login') ?>" style="color: #ed1c24;font-weight: bold;">Masuk</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('register') ?>" style="color: #ed1c24;font-weight: bold;">Daftarkan Usahamu</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('hubungi') ?>" style="color: #ed1c24;font-weight: bold;">Hubungi Kami</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('cari') ?>" style="color: #ed1c24;"><i class="fa fa-search" style="font-size: 16px;"></i></a></li>
                 </ul>
             </div>

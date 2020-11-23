@@ -7,11 +7,12 @@
             </tr>
         </thead>
         <tbody>
+            <?php foreach ($laporan as $row) :?>
             <tr>
-                <td style="max-width: 253px;">&lt;Nama Usaha &gt; <a href="#">Link</a></td>
-                <td class="text-break" style="max-width: 816px;">asdasddaojsndoansodnaoisndoiansodinaosidnoainsoidnasodnoasndonaosndoansdoiansoidnaosndoiansoidnaosndoansodnoainsdoinaosdnoiasndoansoidn</td>
+                <td style="max-width: 253px;">&lt;<?= $row->nama_usaha;?> &gt;</td>
+                <td class="text-break" style="max-width: 816px;"><?= $row->comment;?></td>
             </tr>
-            <tr></tr>
+            <?php endforeach;?> 
         </tbody>
     </table>
 </div>
