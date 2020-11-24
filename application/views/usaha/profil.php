@@ -1,5 +1,5 @@
-<div class="row">
-    <div class="col d-flex justify-content-center align-items-center"><span style="font-family: Poppins, sans-serif;font-weight: bold;font-size: 20px;">Profil</span></div>
+<div class="form-row">
+    <div class="col d-flex d-lg-flex justify-content-center justify-content-lg-center" style="padding: 0px;margin-bottom: 20px;"><span class="text-center" style="font-size: 20px;color: #ff4141;font-weight: bold;font-family: Poppins, sans-serif;font-style: normal;">Profile</span></div>
 </div>
 <hr>
 
@@ -40,7 +40,7 @@
                         <div class="col-9 col-sm-9 col-md-5"><label>No Telp</label><input class="form-control" type="tel" name="telp" value="<?= $users['telephone'];?>"></div>
                     </div>
                     <div class="row" style="margin-top: 44px;margin-bottom: 165px;">
-                        <div class="col d-flex justify-content-center align-items-center"><input class="btn btn-primary border rounded" role="button" value="upload"  type="submit" placeholder="Simpan" style="width: 121px;background-color: rgb(124,242,52);"></div>
+                        <div class="col d-flex justify-content-center align-items-center"><input class="btn btn-primary border rounded" role="button" value="Simpan"  type="submit" placeholder="Simpan" style="width: 121px;background-color: rgb(124,242,52);"></div>
                         <div class="col d-flex justify-content-center align-items-center"><a class="btn btn-primary border rounded" role="button" style="width: 154px;background-color: rgb(255,65,65);" href="<?php echo base_url('changepassword'); ?>">Ubah Kata Sandi</a></div>
                     </div>
                 </form>

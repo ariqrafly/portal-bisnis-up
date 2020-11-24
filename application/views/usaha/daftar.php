@@ -31,7 +31,7 @@
                 <div class="col-12 col-lg-6 d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="padding: 0px;"><input type="file" value="save" name="image" required="" accept="image/*"></div>
             </div>
             <div class="form-row">
-                <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><input class="btn btn-primary border rounded" type="submit" name="daftar" value="upload" placeholder="Submit" style="width: 121px;background-color: rgb(255,65,65);" href=""/></div>
+                <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><input class="btn btn-primary border rounded" type="submit" name="daftar" value="Daftar" placeholder="Submit" style="width: 121px;background-color: rgb(255,65,65);" href=""/></div>
 
             </div>
         </form>

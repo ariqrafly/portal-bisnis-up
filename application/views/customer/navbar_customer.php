@@ -16,14 +16,16 @@
 <body>
 
     <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="font-family: Poppins, sans-serif;">
-        <div class="container"><a class="navbar-brand" href="<?= base_url() ?>"><img src="assets/img/logo doang 1.png" />Portal Bisnis UP</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <!-- <div class="container"><a class="navbar-brand" href="<?= base_url() ?>"><img src="assets/img/logo doang 1.png" />Portal Bisnis UP</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button> -->
+        <div class="container"><a class="navbar-brand" href="#"><img src="assets/img/logo doang 1.png" />Portal Bisnis UP</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1" style="background-color: #ffffff;">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url() ?>" style="color: #ed1c24;font-weight: bold;">Halaman Utama</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url() ?>" style="color: #ed1c24;"><i class="fa fa-search" style="font-size: 16px;"></i></a></li>
+                    <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url() ?>" style="color: #ed1c24;font-weight: bold;">Halaman Utama</a></li> -->
                     <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('login') ?>" style="color: #ed1c24;font-weight: bold;">Masuk</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('register') ?>" style="color: #ed1c24;font-weight: bold;">Daftarkan Usahamu</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('hubungi') ?>" style="color: #ed1c24;font-weight: bold;">Hubungi Kami</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('cari') ?>" style="color: #ed1c24;"><i class="fa fa-search" style="font-size: 16px;"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('register') ?>" style="color: #ed1c24;font-weight: bold;">Daftar</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('hubungi_general') ?>" style="color: #ed1c24;font-weight: bold;">Hubungi Kami</a></li>
+                    <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('cari') ?>" style="color: #ed1c24;"><i class="fa fa-search" style="font-size: 16px;"></i></a></li> -->
                 </ul>
             </div>
         </div>

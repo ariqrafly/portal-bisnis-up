@@ -17,17 +17,17 @@
                 <div class="col-12 col-lg-6 d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="padding: 0px;"><input class="border rounded form-control" type="password" name="psw" placeholder="Kata Sandi" style="padding: 7px;"></div>
 
             </div>
-            <div class="form-row" style="margin-bottom: 20px;">
+            <!-- <div class="form-row" style="margin-bottom: 20px;">
                 <div class="col d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="padding: 0px;">
                     <div class="form-check"><input name="checkbox" class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Biarkan saya tetap masuk</label></div>
                 </div>
-            </div>
+            </div> -->
             <div class="form-row">
                 <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><button type="submit" class="btn btn-primary border rounded" style="width: 121px;background-color: rgb(255,65,65);" href="pencarian%20usaha.html">Masuk</a></div>
             </div>
             <div class="form-row" style="margin-top: 13px;">
-                <div class="col-12 d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><span>Belum punya akun ?&nbsp;</span><a href="#" style="color: rgb(255,65,65);">Daftar disini</a></div>
-                <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><a href="#" style="color: rgb(255,65,65);">Lupa kata sandi?</a></div>
+                <div class="col-12 d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><span>Belum punya akun ?&nbsp;</span><a href="<?= base_url('register') ?>" style="color: rgb(255,65,65);">Daftar disini</a></div>
+                <!-- <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><a href="#" style="color: rgb(255,65,65);">Lupa kata sandi?</a></div> -->
             </div>
         </form>
     </div>

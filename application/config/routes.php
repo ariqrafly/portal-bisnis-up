@@ -60,6 +60,7 @@ $route['lapor'] = 'PortalController/lapor';
 $route['verifikasi_usaha'] = 'dasbor/verifikasi_usaha';
 $route['cek_laporan'] = 'dasbor/cek_laporan';
 $route['hubungi'] = 'PortalController/hubungi_kami';
+$route['hubungi_general'] = 'PortalController/hubungi_kami_general';
 
 $route['usaha_backoffice'] = 'BackOfficeController/usaha';
 $route['kelola_laporan'] = 'BackOfficeController/kelolaLaporan';

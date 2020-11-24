@@ -41,13 +41,16 @@ class PortalController extends CI_Controller
 
     public function cari()
     {
-        $login = true;
-        if ($login) {
+       
+        if ($_SESSION['login'] == true) {
             $this->load->view('usaha/navbar_usaha');
-        } else {
-            $this->load->view('customer/navbar_customer');
-        }
-        $this->load->view('customer/cari');
+            $this->load->view('customer/cari');
+        } 
+        // else {
+        //     $this->load->view('customer/navbar_customer');
+        //     $this->load->view('customer/cari');
+        // }
+       
     }
     
     
@@ -65,13 +68,19 @@ class PortalController extends CI_Controller
 
     public function hubungi_kami()
     {
-        if($_SESSION['login'] != true)
+     
+        if($_SESSION['login'] == true)
         {
-            $this->load->view('customer/navbar_customer');
+            $this->load->view('usaha/navbar_usaha');
+            $this->load->view('customer/hubungi_kami');
         }
-        else{
-            $this->load->view('customer/navbar_usaha');
-        }
+        
+        
+    }
+
+    public function hubungi_kami_general()
+    {
+        $this->load->view('customer/navbar_customer');
         $this->load->view('customer/hubungi_kami');
     }
     

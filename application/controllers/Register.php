@@ -18,6 +18,7 @@ class Register extends CI_Controller {
         $config = [
             'upload_path' => './assets/UserKTM/',
             'allowed_types' => 'jpg|png|jpeg|JPG|PNG|JPEG|'
+        ];
             
         $this->load->library('upload',$config);
         $this->upload->do_upload('image');

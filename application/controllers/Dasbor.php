@@ -61,7 +61,7 @@ class Dasbor extends CI_Controller {
 		$layanan = implode("", $layanan_array);
 
         $newUser = array(
-        	'uid' => $uid,
+        	// 'uid' => $uid,
             'nama_usaha' => $name,
             'deskripsi' => $deskripsi,
             'layanan' => $layanan,

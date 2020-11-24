@@ -20,7 +20,7 @@
 
 
             <div class="form-row">
-                <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><input class="btn btn-primary border rounded" role="button" style="width: 121px;background-color: rgb(255,65,65);" type="submit" placeholder="Ubah Sandi"></div>
+                <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><input class="btn btn-primary border rounded" role="button" style="width: 121px;background-color: rgb(255,65,65);" value="Simpan" type="submit" placeholder="Ubah Sandi"></div>
             </div>
         </form>
     </div>
