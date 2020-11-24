@@ -50,21 +50,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'PortalController';
-$route['masuk'] = 'PortalController/masuk';
+$route['register'] = 'register';
 $route['cari'] = 'PortalController/cari';
-$route['daftar'] = 'PortalController/daftar';
+$route['login'] = 'login';
 $route['profil'] = 'PortalController/profil';
 $route['usaha'] = 'PortalController/usaha';
-$route['edit_usaha'] = 'PortalController/edit_usaha';
+$route['edit_usaha'] = 'dasbor/edit_usaha';
 $route['lapor'] = 'PortalController/lapor';
-$route['verifikasi_usaha'] = 'PortalController/verifikasi_usaha';
-$route['cek_laporan'] = 'PortalController/laporan_usaha';
+$route['verifikasi_usaha'] = 'dasbor/verifikasi_usaha';
+$route['cek_laporan'] = 'dasbor/cek_laporan';
 $route['hubungi'] = 'PortalController/hubungi_kami';
 
 $route['usaha_backoffice'] = 'BackOfficeController/usaha';
 $route['kelola_laporan'] = 'BackOfficeController/kelolaLaporan';
-$route['dasbor'] = 'PortalController/dasbor';
-$route['ganti_password'] = 'PortalController/ganti_password';
+$route['dasbor'] = 'dasbor';
+$route['changepassword'] = 'changepassword';
 
 
 $route['backOffice'] = 'BackOfficeController';

@@ -17,8 +17,8 @@ class Register extends CI_Controller {
 	{   
         $config = [
             'upload_path' => './assets/UserKTM/',
-            'allowed_types' => 'jpg|png|jpeg'
-        ];
+            'allowed_types' => 'jpg|png|jpeg|JPG|PNG|JPEG|'
+            
         $this->load->library('upload',$config);
         $this->upload->do_upload('image');
         $info = $this->upload->data();
@@ -35,7 +35,8 @@ class Register extends CI_Controller {
             'email' => $email,
             'password' => $password,
             'telephone' => $telp,
-            'upload_ktm' => $image_path
+            'upload_ktm' => $image_path,
+            'photo_profile' => 'http://localhost/portal-bisnis-up/assets/Profile_Picture/default.png'
         );
 
         $this->accountExist($email, $password, $name, $newUser);
@@ -57,7 +58,7 @@ class Register extends CI_Controller {
         {            
             $this->User->register($newUser);
         }
-        redirect(base_url('masuk'),'refresh');
+        redirect(base_url('login'),'refresh');
     }
 }
 ?>
