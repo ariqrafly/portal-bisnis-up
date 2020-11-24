@@ -17,11 +17,12 @@ class Dasbor extends CI_Controller {
         $uid = $_SESSION['id'];
         $data['usaha'] = $this->user->getUsaha($uid)->result();
 
-        if($data > 0){
+        // if($data > 0){
         	$this->load->view('usaha/dasbor', $data);
-        }else{
-        	$this->load->view('usaha/kosong');
-        }
+		// }
+		// else{
+        // 	$this->load->view('usaha/kosong');
+        // }
 
     	}
 	}

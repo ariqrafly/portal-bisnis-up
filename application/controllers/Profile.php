@@ -30,7 +30,7 @@ class Profile extends CI_Controller {
         $this->load->library('upload',$config);
         $this->upload->do_upload('ganti');
         $info = $this->upload->data();
-        var_dump($info);
+        // var_dump($info);
         $image_path = base_url("assets/Profile_Picture/".$info['raw_name'].$info['file_ext']);
 
 		$name = $this->input->post('nama');
