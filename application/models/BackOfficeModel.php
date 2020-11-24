@@ -91,7 +91,11 @@ class BackOfficeModel extends CI_Model
         OR (waktu_kerja LIKE '%" . $search . "%')
         OR (telegram LIKE '%" . $search . "%')
         OR (whatsapp LIKE '%" . $search . "%')
-        OR (twitter LIKE '%" . $search . "%')")->result();
+        OR (twitter LIKE '%" . $search . "%')
+        OR (nama_usaha LIKE '%" . $search . "%')
+        OR (deskripsi LIKE '%" . $search . "%')
+        
+        ")->result();
     }
 
     // Laporan

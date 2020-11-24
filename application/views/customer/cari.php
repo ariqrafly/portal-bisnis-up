@@ -40,7 +40,7 @@
                 </div> -->
             </div>
             <div class="col-md-8 col-lg-10" style="padding: 0px;padding-right: 0;height: auto;">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col">
                     <div class="form-row">
                         <div class="col d-flex d-lg-flex justify-content-center justify-content-lg-center" style="padding: 0px;margin-bottom: 20px;"><span class="text-center" style="font-size: 20px;color: #ff4141;font-weight: bold;font-family: Poppins, sans-serif;font-style: normal;">Cari Usaha</span></div>
@@ -49,7 +49,35 @@
                             <div class="col d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="margin: 24px;"><input type="search" class="border rounded" placeholder="Cari Nama Usaha" style="padding: 7px;width: 80%;" /><a class="active d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" href="#" style="color: #ffffff;margin-left: 30px;width: 56px;height: 37px;background-color: #ff4141;"><i class="fa fa-search" style="font-size: 16px;"></i></a></div>
                         </div>
                     </div>
+                </div> -->
+                <div class="row">
+                    <div class="col">
+                        <div class="form-row">
+                            <div class="col d-flex d-lg-flex justify-content-center justify-content-lg-center" style="padding: 0px;margin-bottom: 20px;"><span class="text-center" style="font-size: 20px;color: #ff4141;font-weight: bold;font-family: Poppins, sans-serif;font-style: normal;">Cari Usaha</span></div>
+                        </div>
+                        <form action="<?= base_url('kategori_usaha') ?>">
+                            <div class="row">
+                                <div class="col d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="margin: 24px;">
+                                    <!-- <input type="search" class="border rounded" placeholder="Cari Nama Usaha" style="padding: 7px;width: 80%;" />
+                                    <a class="active d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" href="#" style="color: #ffffff;margin-left: 30px;width: 56px;height: 37px;background-color: #ff4141;">
+                                    <i class="fa fa-search" style="font-size: 16px;"></i>
+                                    </a> -->
+                                    <!-- <form  class="form-inline mr-auto" action="<?= base_url('kategori_usaha') ?>"> -->
+                                    
+                                        <!-- <div class="form-group "><label for="search-field"></label> -->
+                                            <input class="border rounded" type="search" placeholder="Cari Nama Usaha"  id="search-field" name="search" style="padding: 7px;width: 80%;">
+                                            <!-- <button class="btn btn-light action-button " type="submit" style="margin-right: 10px;"><i class="fa fa-search" style="font-size: 16px;"></i></button> -->
+                                            <button class="btn btn-light action-button " type="submit" style="color: #ffffff;margin-left: 30px;width: 56px;height: 37px;background-color: #ff4141;"> 
+                                            <i class="fa fa-search " style="font-size: 16px;"></i>
+                                            </button>
+                                        <!-- </div> -->
+                                </div>
+                            </div>
+                        </form> 
+                         
+                    </div>
                 </div>
+                                
 
                 <div class="row no-gutters justify-content-center features" style="font-family: Poppins, sans-serif;margin-top: 20px;max-height: 353px;min-height: 353px;">
                     
