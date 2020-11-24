@@ -21,7 +21,7 @@
     <div id="wrapper">
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"> <a href="#">Back Office</a></li>
+                <li class="sidebar-brand"> <a href="#">Back Office Portal Bisnis UP</a></li>
                 <li> <a href="<?= base_url('kelola_user') ?>">Kelola User</a></li>
                 <li> <a href="<?= base_url('kelola_usaha') ?>">Kelola Usaha</a></li>
                 <li> <a href="<?= base_url('kelola_laporan') ?>">Kelola Laporan</a></li>

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="content" style="padding: 30px;">
-                    <h1>Kelola Usaha</h1>
+                    <h1>Kelola Laporan</h1>
                     <div style="margin-bottom: 20px;">
                         <nav class="navbar navbar-light navbar-expand-md shadow-sm d-xl-flex justify-content-xl-center align-items-xl-center navigation-clean-search">
                             <div class="container">

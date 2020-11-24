@@ -16,7 +16,7 @@
 
 <body>
     <div class="row">
-        <div class="col-12" style="padding: 100px;padding-bottom: 0px;"><span>Welcome To Back Office</span></div>
+        <div class="col-12" style="padding: 100px;padding-bottom: 0px;"><span> <h2><strong>Welcome To Back Office Portal Bisnis UP</strong></h2></span></div>
     </div>
     <div class="row">
         <div class="col-12" style="padding: 100px;padding-top: 0px;margin-top: 20px;">
