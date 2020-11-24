@@ -1,7 +1,7 @@
 <div>
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-lg-2" style="margin-top:5%; padding-left: 0px;padding-right: 0px;">
+            <div class="col-md-3 col-lg-2" style="margin-top:5%;margin-bottom:5%; padding-left: 0px;padding-right: 0px;">
                 <!-- <div class="row" style="margin: 9px;">
                     <div class="col-12" style="font-family: Poppins, sans-serif;"><label>Urutkan</label>
                         <div class="dropdown"><button class="btn btn-primary dropdown-toggle border-dark" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);width: 159px;color: rgb(0,0,0);">Ulasan </button>
@@ -19,8 +19,15 @@
                 </div> -->
                 <div class="row" style="margin: 9px;">
                     <div class="col-12" style="font-family: Poppins, sans-serif;"><label>Kategori Usaha</label>
-                        <div class="dropdown"><button class="btn btn-primary dropdown-toggle border-dark" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);width: 159px;color: rgb(0,0,0);">Jasa</button>
-                            <div role="menu" class="dropdown-menu"><a role="presentation" class="dropdown-item" href="#">First Item</a><a role="presentation" class="dropdown-item" href="#">Second Item</a><a role="presentation" class="dropdown-item" href="#">Third Item</a></div>
+                    <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle border-dark" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);width: 159px;color: rgb(0,0,0);">Pilih</button>
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('kategori_usaha') ?>">Semua</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('kategori_usaha?q=0') ?>">Jasa</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('kategori_usaha?q=1') ?>">Makanan / Minuman</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('kategori_usaha?q=2') ?>">Barang</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('kategori_usaha?q=99') ?>">Lainnya</a>
+                            </div>
                         </div>
                     </div>
                 </div>

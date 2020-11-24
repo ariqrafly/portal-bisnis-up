@@ -88,5 +88,31 @@ class PortalController extends CI_Controller
         $this->load->view('customer/navbar_customer');
         $this->load->view('customer/hubungi_kami');
     }
+
+
+    public function kategoriUsaha()
+    {
+        if ($_SESSION['login'] == true) {
+            // $this->load->model('user');
+            // $uid = $_SESSION['id'];
+            // $data['usaha'] = $this->user->getUsaha($uid)->result();
+
+            $this->load->model('BackOfficeModel');
+            if (isset($_GET['q'])) {
+                $data['usaha'] = $this->BackOfficeModel->getSomeUsaha($_GET['q']);
+            } else if (isset($_GET['uid'])) {
+                $data['usaha'] = $this->BackOfficeModel->getUsahaByUser($_GET['uid']);
+            } else if (!isset($_GET['search'])) {
+                $data['usaha'] = $this->BackOfficeModel->getAllUsaha();
+            } else {
+                $data['usaha'] = $this->BackOfficeModel->searchUsaha($_GET['search']);
+            }
+
+            $this->load->view('usaha/navbar_usaha');
+            $this->load->view('customer/cari', $data);
+
+        } 
+    }
+    
     
 }

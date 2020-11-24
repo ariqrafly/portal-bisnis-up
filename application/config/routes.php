@@ -75,3 +75,6 @@ $route['user'] = 'BackOfficeController/user';
 $route['edit'] = '';
 $route['password'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+$route['kategori_usaha'] = 'PortalController/kategoriUsaha';
