@@ -16,7 +16,7 @@
                 </div> -->
                 <div class="col-12 col-lg-6 d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center" style="padding: 0px;">
                     <select class="border rounded form-control" name="layanan" placeholder="Jenis Usaha" style="padding: 7px;" required'>
-                        <option value='Other'>Other</option>
+                        <option value='Lainnya'>Lainnya</option>
                         <option value='Jasa'>Jasa</option>
                         <option value='Makanan/Minuman'>Jual-beli Makanan/Minuman</option>
                         <option value='Barang'>Jual-beli Barang</option>

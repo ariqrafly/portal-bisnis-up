@@ -32,7 +32,7 @@
                                 <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=2') ?>">Barang</a>
                                 <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=3') ?>">Acara</a>
                                 <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=4') ?>">Pekerjaan</a>
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=5') ?>">Lainnya</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=99') ?>">Lainnya</a>
 
 
 

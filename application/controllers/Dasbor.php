@@ -60,12 +60,26 @@ class Dasbor extends CI_Controller {
     	$deskripsi = implode("", $deskripsi_array); 
 		$layanan = implode("", $layanan_array);
 
+		if ($layanan=='Jasa'){
+			$kategori=0;
+		}
+		if ($layanan=='Makanan/Minuman'){
+			$kategori=1;
+		}
+		if ($layanan=='Barang'){
+			$kategori=2;
+		}
+		if ($layanan=='Lainnya'){
+			$kategori=99;
+		}
+		
         $newUser = array(
         	'uid' => $uid,
             'nama_usaha' => $name,
             'deskripsi' => $deskripsi,
             'layanan' => $layanan,
-            'foto_usaha' => $image_path,
+			'foto_usaha' => $image_path,
+			'kategori' => $kategori,
         );
 
          $this->User->ajukanUsaha($newUser);
@@ -115,6 +129,19 @@ class Dasbor extends CI_Controller {
     	$deskripsi = implode("", $deskripsi_array); 
 		$layanan = implode("", $layanan_array);
 
+		if ($layanan=='Jasa'){
+			$kategori=0;
+		}
+		if ($layanan=='Makanan/Minuman'){
+			$kategori=1;
+		}
+		if ($layanan=='Barang'){
+			$kategori=2;
+		}
+		if ($layanan=='Lainnya'){
+			$kategori=99;
+		}
+
 		$newUser = array(
 		'deskripsi' => $deskripsi,
 		'layanan' => $layanan,
@@ -127,6 +154,7 @@ class Dasbor extends CI_Controller {
 		'whatsapp' => $whatsapp,
 		'telegram' => $telegram,
 		'twitter' => $twitter,
+		'kategori' => $kategori,
 		);
 
 		$this->user->updateUsaha($id_usaha, $newUser);
