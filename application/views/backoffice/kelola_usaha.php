@@ -30,8 +30,8 @@
                                 <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=0') ?>">Jasa</a>
                                 <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=1') ?>">Makanan / Minuman</a>
                                 <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=2') ?>">Barang</a>
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=3') ?>">Acara</a>
-                                <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=4') ?>">Pekerjaan</a>
+                                <!-- <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=3') ?>">Acara</a>
+                                <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=4') ?>">Pekerjaan</a> -->
                                 <a class="dropdown-item" role="presentation" href="<?= base_url('kelola_usaha?q=99') ?>">Lainnya</a>
 
 
@@ -45,9 +45,9 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>KATEGORI</th>
+                                            <th>JENIS USAHA</th>
                                             <th>NAMA USAHA</th>
-                                            <th>LAYANAN</th>
+                                            <!-- <th>LAYANAN</th> -->
                                             <th>Owner</th>
                                             <th>USER</th>
                                             <th>FOTO USAHA</th>
@@ -79,13 +79,13 @@
                                                     ?></td>
                                                 </td>
                                                 <td><?= $row->nama_usaha; ?></td>
-                                                <td>
+                                                <!-- <td>
                                                     <div><a class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button">Show</a>
                                                         <div class="collapse" id="collapse-3">
                                                             <?= $row->layanan; ?>
                                                         </div>
                                                     </div>
-                                                </td>
+                                                </td> -->
                                                 <td><?= $row->owner; ?></td>
                                                 <td><a href="<?= base_url('user?i=' . $row->uid) ?>"><?= $row->uid; ?></a></td>
                                                 <td><a href="<?= $row->foto_usaha; ?>">Open</a></td>
@@ -93,12 +93,12 @@
                                                     <div><a class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button">Show</a>
                                                         <div class="collapse" id="collapse-1">
                                                             <ul>
-                                                                <li>Kontak : <?= $row->kontak; ?></li>
                                                                 <li>Whatsapp : <?= $row->whatsapp; ?></li>
                                                                 <li>Instagram : <?= $row->instagram; ?></li>
+                                                                <!-- <li>Kontak : <?= $row->kontak; ?></li>
                                                                 <li>Facebook : <?= $row->facebook; ?></li>
                                                                 <li>Twitter : <?= $row->twitter; ?></li>
-                                                                <li>Telegram : <?= $row->telegram; ?></li>
+                                                                <li>Telegram : <?= $row->telegram; ?></li> -->
 
                                                             </ul>
                                                         </div>

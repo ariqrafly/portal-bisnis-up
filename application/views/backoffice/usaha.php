@@ -24,10 +24,10 @@
                 <div class="col-3"><span>Lokasi</span></div>
                 <div class="col"><textarea style="width: 100%;" readonly=""><?= $usaha[0]->lokasi ?></textarea></div>
             </div>
-            <div class="row" style="padding: 10px;margin-bottom: 10px;">
+            <!-- <div class="row" style="padding: 10px;margin-bottom: 10px;">
                 <div class="col-3"><span>Waktu Kerja</span></div>
                 <div class="col"><input type="text" style="width: auto;" value="<?= $usaha[0]->waktu_kerja ?>" readonly=""></div>
-            </div>
+            </div> -->
 
             <div class="row" style="padding: 10px;margin-bottom: 10px;">
                 <div class="col-3"><span>Kontak</span></div>
@@ -35,12 +35,12 @@
                     <div><a class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button">Show</a>
                         <div class="collapse" id="collapse-1">
                             <ul>
-                                <li>Kontak : <?= $usaha[0]->kontak; ?></li>
                                 <li>Whatsapp : <?= $usaha[0]->whatsapp; ?></li>
                                 <li>Instagram : <?= $usaha[0]->instagram; ?></li>
+                                <!-- <li>Kontak : <?= $usaha[0]->kontak; ?></li>
                                 <li>Facebook : <?= $usaha[0]->facebook; ?></li>
                                 <li>Twitter : <?= $usaha[0]->twitter; ?></li>
-                                <li>Telegram : <?= $usaha[0]->telegram; ?></li>
+                                <li>Telegram : <?= $usaha[0]->telegram; ?></li> -->
 
                             </ul>
                         </div>
@@ -48,13 +48,13 @@
                 </div>
             </div>
             <div class="row" style="padding: 10px;margin-bottom: 10px;">
-                <div class="col-3"><span>Layanan</span></div>
+                <div class="col-3"><span>Kategori Usaha</span></div>
                 <div class="col">
-                    <div><a class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button">Show</a>
-                        <div class="collapse" id="collapse-3">
-                            <?= $usaha[0]->deskripsi; ?>
-                        </div>
-                    </div>
+                    <!-- <div><a class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button">Show</a>
+                        <div class="collapse" id="collapse-3"> -->
+                            <?= $usaha[0]->layanan; ?>
+                        <!-- </div>
+                    </div> -->
                 </div>
             </div>
 
