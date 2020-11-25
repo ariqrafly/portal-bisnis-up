@@ -78,3 +78,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['kategori_usaha'] = 'PortalController/kategoriUsaha';
+$route['detail_usaha'] = 'PortalController/detail_usaha';

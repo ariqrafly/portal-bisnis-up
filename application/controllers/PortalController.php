@@ -113,6 +113,26 @@ class PortalController extends CI_Controller
 
         } 
     }
+
+
+    public function detail_usaha()
+    {
+    	$id_usaha = $_GET['iu'];
+		if($_SESSION['login'] != true)
+		{
+			redirect(base_url('login'));
+		}else{
+		$this->load->model('user');
+        $data['usaha'] = $this->user->usaha($id_usaha)->row_array();
+		$this->load->view('usaha/navbar_usaha');
+		$this->load->view('customer/detail', $data);
+		// $this->load->view('customer/detail');
+		}
+
+		$_SESSION['usaha'] = $id_usaha;
+
+		
+	}
     
     
 }

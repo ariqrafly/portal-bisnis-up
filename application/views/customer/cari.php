@@ -99,7 +99,7 @@
                              </div>
                          </div>
                      </a> -->
-                       <a href="<?= base_url('edit_usaha?iu=' . $row->id_usaha) ?>">
+                       <a href="<?= base_url('detail_usaha?iu=' . $row->id_usaha) ?>">
                             <div class="border rounded-0 shadow-sm box" style="min-height: 250px;max-height: 350px;">
                                 <div class="row">
                                     <div class="col d-flex justify-content-center align-items-center"><img src="<?= $row->foto_usaha?>" style="padding: 15px;width: 150px;height: 150px;min-width: 150px;max-width: 150px;min-height: 150px;max-height: 150px;" /></div>
