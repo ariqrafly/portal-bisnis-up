@@ -61,13 +61,15 @@ class PortalController extends CI_Controller
     
     public function lapor()
     {
-        $login = true;
-        if ($login) {
+        // $login = true;
+        if ($_SESSION['login'] == true) {
             $this->load->view('usaha/navbar_usaha');
-        } else {
-            $this->load->view('customer/navbar_customer');
-        }
-        $this->load->view('customer/lapor');
+            $this->load->view('customer/lapor');
+        } 
+        // else {
+        //     $this->load->view('customer/navbar_customer');
+        // }
+        
     }
     
 
