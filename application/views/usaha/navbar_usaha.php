@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-</body>
+<body>
 
 <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="font-family: Poppins, sans-serif;">
     <div class="container"><a class="navbar-brand" href="#"><img src="assets/img/logo doang 1.png" />Portal Bisnis UP</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>

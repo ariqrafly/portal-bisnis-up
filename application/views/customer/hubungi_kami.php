@@ -8,3 +8,9 @@
 <div class="row">
     <div class="col d-flex justify-content-center align-items-center"><span class="text-center" style="color: rgb(218,29,29);font-family: Poppins, sans-serif;"> <br> Email : portalbisnis.up@gmail.com<br /><br /></span></div>
 </div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
