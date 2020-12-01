@@ -39,18 +39,24 @@ class PortalController extends CI_Controller
     }
   
     
-    public function lapor()
-    {
-        // $login = true;
-        if ($_SESSION['login'] == true) {
-            $this->load->view('usaha/navbar_usaha');
-            $this->load->view('customer/lapor');
-        } 
-        // else {
-        //     $this->load->view('customer/navbar_customer');
-        // }
+    // public function lapor()
+    // {
+
+    //     // $id_usaha = $_GET['iu'];
+    //     // $this->load->model('user');
+    //     // $data['usaha'] = $this->user->usaha($id_usaha)->row_array();
+
+    //     // $login = true;
+    //     if ($_SESSION['login'] == true) {
+    //         $this->load->view('usaha/navbar_usaha');
+    //         // $this->load->view('customer/lapor', $data);
+    //         $this->load->view('customer/lapor');
+    //     } 
+    //     // else {
+    //     //     $this->load->view('customer/navbar_customer');
+    //     // }
         
-    }
+    // }
     
 
     public function hubungi_kami()

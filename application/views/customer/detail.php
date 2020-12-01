@@ -29,7 +29,7 @@
                 </div> -->
 
                 <div class="col d-xl-flex justify-content-center align-items-center justify-content-xl-center">
-                    <a href="<?= base_url('PortalController/lapor');?>"><button class="btn btn-primary border rounded d-flex justify-content-center" type="button" style="background-color: rgb(238,238,238);color: rgb(0,0,0);font-family: Poppins, sans-serif;font-weight: bold;margin-top: 29px;">Laporkan Usaha</button></a>
+                    <a href="<?= base_url('lapor');?>"><button class="btn btn-primary border rounded d-flex justify-content-center" type="button" style="background-color: rgb(238,238,238);color: rgb(0,0,0);font-family: Poppins, sans-serif;font-weight: bold;margin-top: 29px;">Laporkan Usaha</button></a>
                 </div>
 
             </div>
@@ -38,10 +38,10 @@
     </div>
     <div class="col-12 col-md-6">
         <p style="font-family: Poppins, sans-serif;"><strong>Deskripsi</strong></p>
-        <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['deskripsi'];?>" name="instagram" style="width: 100%;"  >
+        <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['deskripsi'];?>" name="deskripsi" style="width: 100%;"  >
         <br><br>
         <p style="font-family: Poppins, sans-serif;"><strong>Layanan</strong> :<br></p>
-        <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['layanan'];?>" name="instagram" style="width: 100%;"  >
+        <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['layanan'];?>" name="layanan" style="width: 100%;"  >
         <br><br>
         <p style="font-family: Poppins, sans-serif;"><strong>Instagram </strong>:<br></p>
         <input readonly placeholder="-" class="border rounded-0" value="<?= $usaha['instagram'];?>" name="instagram" style="width: 100%;"  >
