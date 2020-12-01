@@ -63,5 +63,10 @@ class User extends CI_Model
          $this->db->delete('usaha');
     }
 
+    public function lapor($dataUser)
+    {
+        $this->db->insert('report', $dataUser);
+    }
+
 }
 
