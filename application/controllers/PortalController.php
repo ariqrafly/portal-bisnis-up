@@ -37,27 +37,7 @@ class PortalController extends CI_Controller
         }
         $this->load->view('customer/index');
     }
-
-
-    public function cari()
-    {
-       
-        if ($_SESSION['login'] == true) {
-            $this->load->model('user');
-            $uid = $_SESSION['id'];
-            $data['usaha'] = $this->user->getUsaha($uid)->result();
-
-            $this->load->view('usaha/navbar_usaha');
-            $this->load->view('customer/cari', $data);
-
-        } 
-        // else {
-        //     $this->load->view('customer/navbar_customer');
-        //     $this->load->view('customer/cari');
-        // }
-       
-    }
-    
+  
     
     public function lapor()
     {
@@ -111,9 +91,10 @@ class PortalController extends CI_Controller
             }
 
             $this->load->view('usaha/navbar_usaha');
-            $this->load->view('customer/cari', $data);
+            $this->load->view('usaha/cari', $data);
 
         } 
+       
     }
 
 

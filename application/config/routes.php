@@ -51,7 +51,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 $route['default_controller'] = 'PortalController';
 $route['register'] = 'register';
-$route['cari'] = 'PortalController/cari';
+$route['cari'] = 'CariController/cari';
+$route['cari_usaha'] = 'PortalController/kategoriUsaha';
 $route['login'] = 'login';
 $route['profil'] = 'PortalController/profil';
 $route['usaha'] = 'PortalController/usaha';
@@ -76,6 +77,9 @@ $route['edit'] = '';
 $route['password'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+
+$route['kategori_cari'] = 'cariController/kategoriCari';
+$route['detail_cari'] = 'cariController/detail_cari';
 
 $route['kategori_usaha'] = 'PortalController/kategoriUsaha';
 $route['detail_usaha'] = 'PortalController/detail_usaha';

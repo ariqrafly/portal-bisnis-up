@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navcol-1" style="background-color: #ffffff;">
             <ul class="nav navbar-nav ml-auto">
                 <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url() ?>" style="color: #ed1c24;font-weight: bold;"><strong>Halaman Utama</strong><br></a></li> -->
-                <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('cari') ?>" style="color: #ed1c24;"><i class="fa fa-search" style="font-size: 16px;"></i></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('cari_usaha') ?>" style="color: #ed1c24;"><i class="fa fa-search" style="font-size: 16px;"></i></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('profile') ?>" style="color: #ed1c24;font-weight: bold;">Profil</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('dasbor') ?>" style="color: #ed1c24;font-weight: bold;">Dasbor</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url('hubungi')?>" style="color: #ed1c24;font-weight: bold;">Hubungi Kami</a></li>
