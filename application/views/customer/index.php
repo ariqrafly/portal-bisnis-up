@@ -9,7 +9,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><a class="btn btn-primary border rounded" role="button" style="width: 121px;background-color: rgb(255,65,65);" href="<?= base_url('login')  ?>" onClick="alert('Mohon untuk Masuk terlebih dahulu!')">Cari</a></div> 
+            <!-- <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><a class="btn btn-primary border rounded" role="button" style="width: 121px;background-color: rgb(255,65,65);" href="<?= base_url('login')  ?>" onClick="alert('Mohon untuk Masuk terlebih dahulu!')">Cari</a></div>  -->
+            <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center align-items-xl-center"><a class="btn btn-primary border rounded" role="button" style="width: 121px;background-color: rgb(255,65,65);" href="<?= base_url('cari')  ?>" >Cari</a></div> 
             
         </div>
     </div>

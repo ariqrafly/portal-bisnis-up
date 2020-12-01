@@ -1,5 +1,5 @@
 <div class="row" style="margin: 0px;">
-    <div class="col d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="margin-bottom: 45px;"><span style="font-size: 40px;font-family: Poppins, sans-serif;font-weight: bold;color: #000000;">Packetin</span></div>
+    <div class="col d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="margin-bottom: 45px;"><span style="font-size: 40px;font-family: Poppins, sans-serif;font-weight: bold;color: #000000;"><?= $usaha['nama_usaha'];?></span></div>
 </div>
 <form method="post" action="dasbor/edit">
 <div class="row" style="padding: 32px;padding-top: 0px;padding-bottom: 0px;margin:0px;margin-bottom: 62px;">
@@ -36,7 +36,7 @@
         <!-- <p style="font-family: Poppins, sans-serif;"><strong>Layanan</strong> :<br></p><textarea class="border rounded-0" name="layanan" style="width: 100%;"><?= $usaha['layanan'];?></textarea> -->
         <p style="font-family: Poppins, sans-serif;"><strong>Layanan</strong> :<br></p>
         <select class="border rounded-0" name="layanan" placeholder="Jenis Usaha" style="width: 100%;" required'>
-            <option value='Lainnya'><?= $usaha['layanan'];?></option>
+            <option value='<?= $usaha['layanan'];?>'><?= $usaha['layanan'];?></option>
             <option value='Lainnya'>Lainnya</option>
             <option value='Jasa'>Jasa</option>
             <option value='Makanan/Minuman'>Jual-beli Makanan/Minuman</option>

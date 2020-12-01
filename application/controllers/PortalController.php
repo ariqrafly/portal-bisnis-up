@@ -37,37 +37,62 @@ class PortalController extends CI_Controller
         }
         $this->load->view('customer/index');
     }
-
-
-    public function cari()
-    {
-       
-        if ($_SESSION['login'] == true) {
-            $this->load->model('user');
-            $uid = $_SESSION['id'];
-            $data['usaha'] = $this->user->getUsaha($uid)->result();
-
-            $this->load->view('usaha/navbar_usaha');
-            $this->load->view('customer/cari', $data);
-
-        } 
-        // else {
-        //     $this->load->view('customer/navbar_customer');
-        //     $this->load->view('customer/cari');
-        // }
-       
-    }
-    
+  
     
     public function lapor()
     {
-        $login = true;
-        if ($login) {
-            $this->load->view('usaha/navbar_usaha');
-        } else {
-            $this->load->view('customer/navbar_customer');
-        }
-        $this->load->view('customer/lapor');
+
+        // $this->load->model('user');
+		// $id_usaha = $_SESSION['idu'];
+		// $uid = $_SESSION['uid'];
+		// $deskripsi_array = explode(PHP_EOL, $_POST['lapor']);
+		// $laporan = implode("", $deskripsi_array); 
+
+		// $usaha = $this->user->usaha($id_usaha)->row();
+		// $nama = $usaha->nama_usaha;
+
+		
+
+		// $array =  array(
+		// 	'id_usaha' => $id_usaha ,
+		// 	'uid' => $uid,
+		// 	'comment' => $laporan,
+		// 	'nama_usaha' => $nama
+
+		//  );
+
+		// $this->user->lapor($array);
+        // redirect('lapor','refresh');
+
+
+        // $id_usaha = $_GET['iu'];
+
+        $id_usaha = $_SESSION['usaha'];
+
+        $this->load->model('user');
+        $data['usaha'] = $this->user->usaha($id_usaha)->row_array();
+
+        $deskripsi_array = explode(PHP_EOL, $_POST['lapor']);
+        $laporan = implode("", $deskripsi_array); 
+
+        $usaha = $this->user->usaha($id_usaha)->row();
+		$nama = $usaha->nama_usaha;
+
+		
+		$array =  array(
+			'id_usaha' => $id_usaha ,
+			// 'uid' => $uid,
+			'comment' => $laporan,
+			'nama_usaha' => $nama
+
+		 );
+        
+        $this->user->lapor($array);
+
+         redirect(base_url('cari'),'refresh');
+        
+         // $_SESSION['usaha'] = $id_usaha;
+        
     }
     
 
@@ -109,10 +134,31 @@ class PortalController extends CI_Controller
             }
 
             $this->load->view('usaha/navbar_usaha');
-            $this->load->view('customer/cari', $data);
+            $this->load->view('usaha/cari', $data);
 
         } 
+       
     }
+
+
+    public function detail_usaha()
+    {
+    	$id_usaha = $_GET['iu'];
+		if($_SESSION['login'] != true)
+		{
+			redirect(base_url('login'));
+		}else{
+		$this->load->model('user');
+        $data['usaha'] = $this->user->usaha($id_usaha)->row_array();
+		$this->load->view('usaha/navbar_usaha');
+		$this->load->view('customer/detail', $data);
+		// $this->load->view('customer/detail');
+		}
+
+		$_SESSION['usaha'] = $id_usaha;
+
+		
+	}
     
     
 }
