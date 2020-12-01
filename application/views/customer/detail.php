@@ -44,16 +44,16 @@
         <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['layanan'];?>" name="instagram" style="width: 100%;"  >
         <br><br>
         <p style="font-family: Poppins, sans-serif;"><strong>Instagram </strong>:<br></p>
-        <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['instagram'];?>" name="instagram" style="width: 100%;"  >
+        <input readonly placeholder="-" class="border rounded-0" value="<?= $usaha['instagram'];?>" name="instagram" style="width: 100%;"  >
         <br><br>
         <p style="font-family: Poppins, sans-serif;"><strong>Whatsapp </strong>:<br></p>
-        <input readonly placeholder="08XXXXXXXX" class="border rounded-0" value="<?= $usaha['whatsapp'];?>" name="whatsapp" style="width: 100%;">
+        <input readonly placeholder="-" class="border rounded-0" value="<?= $usaha['whatsapp'];?>" name="whatsapp" style="width: 100%;">
         <br><br>
         <p style="font-family: Poppins, sans-serif;"><strong>Lokasi:&nbsp;</strong><br></p>
-        <input readonly placeholder="Jalan X" class="border rounded-0" name="lokasi" style="width: 100%;" value="<?= $usaha['lokasi'];?>" type="text">
+        <input readonly placeholder="-" class="border rounded-0" name="lokasi" style="width: 100%;" value="<?= $usaha['lokasi'];?>" type="text">
         <br><br>
         <p style="font-family: Poppins, sans-serif;"><strong>Pemilik:&nbsp;</strong><br></p>
-        <input readonly placeholder="Nama Pemiliki" class="border rounded-0" name="pemilik" style="width: 100%;" type="text" value="<?= $usaha['owner'];?>">
+        <input readonly placeholder="-" class="border rounded-0" name="pemilik" style="width: 100%;" type="text" value="<?= $usaha['owner'];?>">
         <!-- <input name="telp" placeholder="Nomor Telepon" class="border rounded-0" type="number" value="<?= $usaha['kontak'];?>"> -->
 
 

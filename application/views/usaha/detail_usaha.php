@@ -36,7 +36,7 @@
         <!-- <p style="font-family: Poppins, sans-serif;"><strong>Layanan</strong> :<br></p><textarea class="border rounded-0" name="layanan" style="width: 100%;"><?= $usaha['layanan'];?></textarea> -->
         <p style="font-family: Poppins, sans-serif;"><strong>Layanan</strong> :<br></p>
         <select class="border rounded-0" name="layanan" placeholder="Jenis Usaha" style="width: 100%;" required'>
-            <option value='Lainnya'><?= $usaha['layanan'];?></option>
+            <option value='<?= $usaha['layanan'];?>'><?= $usaha['layanan'];?></option>
             <option value='Lainnya'>Lainnya</option>
             <option value='Jasa'>Jasa</option>
             <option value='Makanan/Minuman'>Jual-beli Makanan/Minuman</option>
