@@ -1,5 +1,5 @@
 <div class="row" style="margin: 0px;">
-    <div class="col d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="margin-bottom: 45px;"><span style="font-size: 40px;font-family: Poppins, sans-serif;font-weight: bold;color: #000000;">Packetin</span></div>
+    <div class="col d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="margin-bottom: 45px;"><span style="font-size: 40px;font-family: Poppins, sans-serif;font-weight: bold;color: #000000;"><?= $usaha['nama_usaha'];?></span></div>
 </div>
 <form method="post" action="dasbor/edit">
 <div class="row" style="padding: 32px;padding-top: 0px;padding-bottom: 0px;margin:0px;margin-bottom: 62px;">
