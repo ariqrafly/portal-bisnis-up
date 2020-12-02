@@ -182,6 +182,8 @@ class Dasbor extends CI_Controller {
 			$uid = $_SESSION['id'];
 			$this->load->model('user');
 			$data['laporan'] = $this->user->laporan($uid)->result();
+
+			
 			$this->load->view('usaha/navbar_usaha');
 			$this->load->view('usaha/dasbor_header');
         	$this->load->view('usaha/cek_laporan', $data);

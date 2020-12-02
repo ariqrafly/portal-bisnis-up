@@ -3,7 +3,7 @@
         <thead>
             <tr>
                 <th>Usaha</th>
-                <th>Comment</th>
+                <th>Laporan</th>
             </tr>
         </thead>
         <tbody>

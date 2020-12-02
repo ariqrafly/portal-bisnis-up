@@ -67,29 +67,40 @@ class PortalController extends CI_Controller
 
         // $id_usaha = $_GET['iu'];
 
-        $id_usaha = $_SESSION['usaha'];
+        // $id_usaha = $_SESSION['usaha'];
+        
+        // $id_usaha = $_SESSION['usaha'];
 
         $this->load->model('user');
-        $data['usaha'] = $this->user->usaha($id_usaha)->row_array();
+        // $data['usaha'] = $this->user->usaha($id_usaha)->row_array();
+
+        $name_array = explode(PHP_EOL, $_POST['namausaha']);
+        $namanya = implode("", $name_array); 
 
         $deskripsi_array = explode(PHP_EOL, $_POST['lapor']);
         $laporan = implode("", $deskripsi_array); 
 
-        $usaha = $this->user->usaha($id_usaha)->row();
-		$nama = $usaha->nama_usaha;
+        $usaha = $this->user->usahanya($namanya)->row();
+		$id = $usaha->id_usaha;
 
 		
 		$array =  array(
-			'id_usaha' => $id_usaha ,
+			'id_usaha' => $id ,
 			// 'uid' => $uid,
 			'comment' => $laporan,
-			'nama_usaha' => $nama
+			'nama_usaha' => $namanya
 
 		 );
         
         $this->user->lapor($array);
 
-         redirect(base_url('cari'),'refresh');
+         
+         if($_SESSION['login'] == true)
+         {
+            redirect(base_url('kategori_usaha'), 'refresh');
+        } else{
+            redirect(base_url('cari'),'refresh');
+        }
         
          // $_SESSION['usaha'] = $id_usaha;
         
