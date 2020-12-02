@@ -56,7 +56,7 @@ class CariController extends CI_Controller
 		$this->load->model('user');
         $data['usaha'] = $this->user->usaha($id_usaha)->row_array();
 		$this->load->view('customer/navbar_customer');
-		$this->load->view('customer/detail', $data);
+		$this->load->view('customer/detail_general', $data);
 		
 	}
     

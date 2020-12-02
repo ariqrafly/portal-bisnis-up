@@ -42,35 +42,6 @@ class PortalController extends CI_Controller
     public function lapor()
     {
 
-        // $this->load->model('user');
-		// $id_usaha = $_SESSION['idu'];
-		// $uid = $_SESSION['uid'];
-		// $deskripsi_array = explode(PHP_EOL, $_POST['lapor']);
-		// $laporan = implode("", $deskripsi_array); 
-
-		// $usaha = $this->user->usaha($id_usaha)->row();
-		// $nama = $usaha->nama_usaha;
-
-		
-
-		// $array =  array(
-		// 	'id_usaha' => $id_usaha ,
-		// 	'uid' => $uid,
-		// 	'comment' => $laporan,
-		// 	'nama_usaha' => $nama
-
-		//  );
-
-		// $this->user->lapor($array);
-        // redirect('lapor','refresh');
-
-
-        // $id_usaha = $_GET['iu'];
-
-        // $id_usaha = $_SESSION['usaha'];
-        
-        // $id_usaha = $_SESSION['usaha'];
-
         $this->load->model('user');
         // $data['usaha'] = $this->user->usaha($id_usaha)->row_array();
 
@@ -101,6 +72,41 @@ class PortalController extends CI_Controller
         } else{
             redirect(base_url('cari'),'refresh');
         }
+        
+         // $_SESSION['usaha'] = $id_usaha;
+        
+    }
+
+    public function lapor_general()
+    {
+
+        $this->load->model('user');
+        // $data['usaha'] = $this->user->usaha($id_usaha)->row_array();
+
+        $name_array = explode(PHP_EOL, $_POST['namausaha']);
+        $namanya = implode("", $name_array); 
+
+        $deskripsi_array = explode(PHP_EOL, $_POST['lapor']);
+        $laporan = implode("", $deskripsi_array); 
+
+        $usaha = $this->user->usahanya($namanya)->row();
+		$id = $usaha->id_usaha;
+
+		
+		$array =  array(
+			'id_usaha' => $id ,
+			// 'uid' => $uid,
+			'comment' => $laporan,
+			'nama_usaha' => $namanya
+
+		 );
+        
+        $this->user->lapor($array);
+
+         
+         
+        redirect(base_url('cari'),'refresh');
+        
         
          // $_SESSION['usaha'] = $id_usaha;
         
