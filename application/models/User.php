@@ -62,6 +62,10 @@ class User extends CI_Model
         return $this->db->get_where('usaha', array('nama_usaha' => $namanya));
     }
 
+    public function pemiliknya($uidnya){
+        return $this->db->get_where('usaha', array('uid' => $uidnya));
+    }
+
     public function deleteUsaha($id_usaha){
          $this->db->where('id_usaha', $id_usaha);
          $this->db->delete('usaha');
@@ -70,6 +74,13 @@ class User extends CI_Model
     public function lapor($dataUser)
     {
         $this->db->insert('report', $dataUser);
+    }
+
+    public function ceklaporan($uid){
+        $data=$this->db->get_where('usaha', array('uid' => $uid));
+        return $this->db->get_where('report', array('id_usaha' => $data));
+        // $query = $this->db->get('report');
+        // return $query->result();
     }
 
 }

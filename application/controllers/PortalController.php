@@ -52,12 +52,15 @@ class PortalController extends CI_Controller
         $laporan = implode("", $deskripsi_array); 
 
         $usaha = $this->user->usahanya($namanya)->row();
-		$id = $usaha->id_usaha;
+        $id = $usaha->id_usaha;
+        
+        $uid_array=  explode(PHP_EOL, $_POST['uid']);
+        $uidnya=implode("", $uid_array); 
 
 		
 		$array =  array(
 			'id_usaha' => $id ,
-			// 'uid' => $uid,
+			'uid' => $uidnya,
 			'comment' => $laporan,
 			'nama_usaha' => $namanya
 
@@ -90,12 +93,15 @@ class PortalController extends CI_Controller
         $laporan = implode("", $deskripsi_array); 
 
         $usaha = $this->user->usahanya($namanya)->row();
-		$id = $usaha->id_usaha;
+        $id = $usaha->id_usaha;
+        
+        $uid_array=  explode(PHP_EOL, $_POST['uid']);
+        $uidnya=implode("", $uid_array); 
 
 		
 		$array =  array(
 			'id_usaha' => $id ,
-			// 'uid' => $uid,
+			'uid' => $uidnya,
 			'comment' => $laporan,
 			'nama_usaha' => $namanya
 

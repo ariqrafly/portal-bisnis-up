@@ -175,6 +175,48 @@ class Dasbor extends CI_Controller {
 	}
 
 	public function cek_laporan(){
+		// if($_SESSION['login'] != true)
+		// {
+		// 	redirect(base_url('login'));
+		// }else{
+
+		// 	$uid = $_SESSION['id'];
+		// 	$this->load->model('user');
+
+		// 	$data['usaha'] = $this->user->getUsaha($uid)->result();
+
+		// 	// $data['laporan'] = $this->user->ceklaporan($data)->result();
+			
+		// 	// $datalapor['laporan'] = $this->user->laporan($data)->result();
+
+		// 	// $this->load->model('user');
+        // 	// $uid = $_SESSION['id'];
+		// 	// $data['usaha'] = $this->user->getUsaha($uid)->result();
+		
+		// 	$this->load->view('usaha/navbar_usaha');
+		// 	$this->load->view('usaha/dasbor_header');
+        // 	$this->load->view('usaha/cek_laporan', $data);
+		// }
+
+
+		// if($_SESSION['login'] != true)
+		// {
+		// 	redirect(base_url('login'));
+		// }else{
+		// 	// $uid = $_SESSION['id'];
+		// 	$uid = $_SESSION['id'];
+		// 	$this->load->model('user');
+		// 	// $data['usaha'] = $this->user->getUsaha($uid)->result();
+		// 	$data['laporan'] = $this->user->ceklaporan($uid)->result();
+
+		// 	// $data2['laporan'] = $this->user->ceklaporan($data)->result();
+
+		// 	$this->load->view('usaha/navbar_usaha');
+		// 	$this->load->view('usaha/dasbor_header');
+		// 	$this->load->view('usaha/cek_laporan', $data);
+		// }
+
+
 		if($_SESSION['login'] != true)
 		{
 			redirect(base_url('login'));
@@ -182,12 +224,12 @@ class Dasbor extends CI_Controller {
 			$uid = $_SESSION['id'];
 			$this->load->model('user');
 			$data['laporan'] = $this->user->laporan($uid)->result();
-
-			
 			$this->load->view('usaha/navbar_usaha');
 			$this->load->view('usaha/dasbor_header');
-        	$this->load->view('usaha/cek_laporan', $data);
-        }
+			$this->load->view('usaha/cek_laporan', $data);
+		}
+
+
 	}
 
 

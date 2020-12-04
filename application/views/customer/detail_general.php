@@ -45,7 +45,8 @@
             
             <div class="col-12 d-xl-flex justify-content-center align-items-center" style="margin-left: 0px;">
                 <form method="post" action="PortalController/lapor_general">
-                <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['nama_usaha'];?>" name="namausaha" style="width: 100%;"  >
+                <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['uid'];?>" name="uid" style="width: 10%; border: none; outline: none;"  > 
+                <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['nama_usaha'];?>" name="namausaha" style="width: 70%;"  >
                 <!-- <input readonly placeholder="portalbisnisup" class="border rounded-0" value="<?= $usaha['id_usaha'];?>" name="deskripsi" style="width: 100%;"  > -->
                 <textarea class="form-control" style="padding: 0px;margin-bottom: 10px; height: 200px; width: 300px;" name="lapor"></textarea>
             </div>
